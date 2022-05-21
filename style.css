@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+    --clr-numbers: #a8ece1;
+    --clr-numbers-hover: #baebe2;
+
+    --clr-screeen: #008B74;
+    --clr-screeen-hover: #008B747b;
+
+    --clr-rank-one: #4FFBDF;
+    --clr-rank-one-hover: #73f8e2;
+
+    --clr-rank-two: #00C2A8;
+    --clr-rank-two-hover: #00C2A87b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(200, 200, 200);
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: minmax(120px, auto) repeat(6, 75px);
+}
+
+/*-------------------- Buttons --------------------*/
+.calculator > button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    outline: none;
+}
+
+.all-clear,
+.delete {
+    grid-column: span 2;
+    background-color: var(--clr-rank-two);
+}
+
+.equals {
+    grid-row: span 3;
+    background-color: var(--clr-rank-two);
+}
+
+.all-clear:hover,
+.delete:hover,
+.equals:hover {
+    background-color: var(--clr-rank-two-hover);
+}
+
+.operation,
+.square,
+.percent {
+    background-color: var(--clr-rank-one);
+}
+
+.operation:hover,
+.square:hover,
+.percent:hover {
+    background-color: var(--clr-rank-one-hover);
+}
+
+.number {
+    background-color: var(--clr-numbers);
+}
+
+.number:hover {
+    background-color: var(--clr-numbers-hover);
+}
+
+/*-------------------- Screen --------------------*/
+.screen {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    background-color: var(--clr-screeen);
+    border: 1px solid white;
+}
+
+/*-------------------- Operands --------------------*/
+.current-number {
+    font-size: 2.5rem;
+}
+
+.previous-number {
+    color: rgba(0, 0, 0, .75);
+    font-size: 1.5rem;
+}
