@@ -3,4 +3,4 @@ Basic Calculator Using JS Without Classes
 
 Webpage: https://raven-isaac-finch.github.io/My-Calculator/
 
-![](https://github.com/Raven-Isaac-Finch/My-Calculator/blob/main/06%20-%20calcwithoutclass_app.gif)
+![](https://user-images.githubusercontent.com/99633768/172045438-e96ed78e-5326-41f2-8781-7562c14db0b7.gif)
